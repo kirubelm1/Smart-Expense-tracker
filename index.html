@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Wallet</h1>
+            <div class="balance-section">
+                <h2>Total Balance</h2>
+                <h3 id="balance"></h3>
+            </div>
+        </header>
+
+        <section id="income-section">
+            <h3>Add Income</h3>
+            <input type="text" id="income-source" placeholder="Source (e.g., salary)" />
+            <input type="number" id="income-amount" placeholder="Amount" />
+            <button id="add-income">Add Income</button>
+        </section>
+
+        <section id="expense-section">
+            <h3>Add Expense</h3>
+            <input type="text" id="expense-description" placeholder="Expense description" />
+            <input type="number" id="expense-amount" placeholder="Amount" />
+            <button id="add-expense">Add Expense</button>
+        </section>
+
+        <section id="transaction-history">
+            <h3>Transaction History</h3>
+            <ul id="history-list"></ul>
+            <button id="clear-transaction-history">Clear Transaction History</button>
+        </section>
+
+        <section id="chart-section">
+            <h3>Monthly Spending Overview</h3>
+            <canvas id="expenseChart"></canvas>
+        </section>
+
+        <section id="reminder-add-section">
+            <h3>Add a Reminder</h3>
+            <input type="text" id="reminder-description" placeholder="Reminder Description (e.g., Pay electricity bill)" />
+            <input type="date" id="reminder-date" />
+            <button id="add-reminder">Add Reminder</button>
+        </section>
+        
+        <section id="reminder-list-section">
+            <h3>Your Reminders</h3>
+            <ul id="reminder-list"></ul>
+        </section>
+        
+        <section id="reminder-section">
+            <h3>Reminders</h3>
+            <p id="reminders">No upcoming payments</p>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

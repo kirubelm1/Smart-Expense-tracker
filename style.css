@@ -1,0 +1,91 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #0070ba; /* PayPal Blue */
+}
+
+.balance-section h2 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.balance-section h3 {
+    font-size: 36px;
+    color: #0070ba;
+}
+
+#income-section, #expense-section {
+    margin-top: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0070ba;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #005b8b;
+}
+
+#transaction-history ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#transaction-history ul li {
+    padding: 10px;
+    background-color: #f5f5f5;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-left: 5px solid #0070ba;
+    display: flex;
+    justify-content: space-between;
+}
+
+#chart-section {
+    margin-top: 40px;
+}
+
+canvas {
+    width: 100% !important;
+    height: auto !important;
+}
+
